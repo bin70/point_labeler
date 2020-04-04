@@ -3,22 +3,22 @@
 <config>
 	<label>
 		<id>1</id>
-		<name>ceiling</name>
-		<description>The top of indoor environment.</description>
+		<name>floor</name>
+		<description>The ground of indoor environment.</description>
 		<color>255 240 150</color>
 		<root>structure</root>
 		<macro>flat</macro>
-		<category>ceiling</category>
+		<category>floor</category>
 	</label>
 
 	<label>
 		<id>2</id>
-		<name>floor</name>
-		<description>The ground of indoor environment.</description>
+		<name>ceiling</name>
+		<description>The top of indoor environment.</description>
 		<color>100 150 245</color>
 		<root>structure</root>
 		<macro>flat</macro>
-		<category>floor</category>
+		<category>ceiling</category>
 	</label>
 	
 	<label>
@@ -46,7 +46,7 @@
 		<id>5</id>
 		<name>beam</name>
 		<description>The support bar on the ceiling.</description>
-		<color>175 0 75</color>
+		<color>255 200 0</color>
 		<root>support</root>
 		<macro>support</macro>
 		<category>beam</category>
@@ -80,7 +80,7 @@
 		<id>8</id>
 		<name>object</name>
 		<description>The static objects in indoor environment.</description>
-		<color>255 200 0</color>
+		<color>175 0 75</color>
 		<root>object</root>
 		<macro>object</macro>
 		<category>object</category>
