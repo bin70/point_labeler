@@ -1,0 +1,100 @@
+	<!-- mapilary labels, see https://research.mapillary.com/img/publications/ICCV17a.pdf  
+   and supplement: https://research.mapillary.com/img/publications/ICCV17a_supp.pdf -->
+<config>
+	<label>
+		<id>1</id>
+		<name>ceiling</name>
+		<description>The top of indoor environment.</description>
+		<color>255 240 150</color>
+		<root>structure</root>
+		<macro>flat</macro>
+		<category>ceiling</category>
+	</label>
+
+	<label>
+		<id>2</id>
+		<name>floor</name>
+		<description>The ground of indoor environment.</description>
+		<color>100 150 245</color>
+		<root>structure</root>
+		<macro>flat</macro>
+		<category>floor</category>
+	</label>
+	
+	<label>
+		<id>3</id>
+		<name>wall</name>
+		<description>The wall of indoor environment.</description>
+		<color>135 60 0</color>
+		<!--color>255 120 50</color-->
+		<root>structure</root>
+		<macro>flat</macro>
+		<category>wall</category>
+	</label>
+
+	<label>
+		<id>4</id>
+		<name>column</name>
+		<description>The support column of indoor environment.</description>
+		<color>255 30 30</color>
+		<root>support</root>
+		<macro>support</macro>
+		<category>column</category>
+	</label>
+
+	<label>
+		<id>5</id>
+		<name>beam</name>
+		<description>The support bar on the ceiling.</description>
+		<color>175 0 75</color>
+		<root>support</root>
+		<macro>support</macro>
+		<category>beam</category>
+	</label>
+
+	<label>
+		<id>6</id>
+		<name>door</name>
+		<description>The doors.</description>
+		<color>0 175 0</color>
+		<!--color>100 230 245</color-->
+		<root>facility</root>
+		<macro>facility</macro>
+		<category>door</category>
+		<instanceable>true</instanceable>
+	</label>
+
+	<label>
+		<id>7</id>
+		<name>window</name>
+		<description>The windows.</description>
+		<!--color>150 255 170</color-->
+		<color>255 0 255</color>
+		<root>facility</root>
+		<macro>facility</macro>
+		<category>window</category>
+		<instanceable>true</instanceable>
+	</label>
+
+	<label>
+		<id>8</id>
+		<name>object</name>
+		<description>The static objects in indoor environment.</description>
+		<color>255 200 0</color>
+		<root>object</root>
+		<macro>object</macro>
+		<category>object</category>
+		<instanceable>true</instanceable>
+	</label>
+
+	<label>
+		<id>9</id>
+		<name>unlabeled</name>
+		<description>all points with no special label.</description>
+		<color>0 0 0</color>
+		<root>void</root>
+		<macro></macro>
+		<category>unlabeled</category>
+	</label>
+	
+</config>
