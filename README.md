@@ -37,4 +37,8 @@ cd ~/catkin_ws/src/point_labeler/bin
 ```
  通过左上角 Open 按钮，打开数据集的 `root folder`
 
+## 基本操作
+<img src="document.png">
 
+## 标记流程
+<img src="task.png">
