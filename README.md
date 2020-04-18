@@ -44,4 +44,4 @@ cd ~/catkin_ws/src/point_labeler/bin
 <img src="task.png">
 
 # TO DO
-位姿转换程序改写成python脚本
+- [ ] 位姿转换程序改写成python脚本
