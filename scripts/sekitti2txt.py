@@ -90,7 +90,7 @@ if __name__ == "__main__":
       out_name = scan_name.split('.')[0]+'.txt'
       out_path = os.path.join(out_dir, out_name)
 
-      print("saving {}".format(out_name))
+      print("saving {}".format(out_path))
       np.savetxt(out_path, scan)
     
 
