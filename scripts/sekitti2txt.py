@@ -43,7 +43,7 @@ def read_points(filename):
   arr = [struct.unpack('<f', contents[4 * i:4 * i + 4])[0] for i in range(num_points)]
   points_arr = np.asarray(arr)  # convert list to array
   
-  points = [np.array([x, y, z, 1]) for (x, y, z) in zip(points_arr[0::4], points_arr[1::4], points_arr[2::4])]
+  points = [np.array([x, y, z, r, 1]) for (x, y, z, r) in zip(points_arr[0::4], points_arr[1::4], points_arr[2::4], points_arr[3::4])]
   return points
 
 if __name__ == "__main__":
@@ -85,7 +85,7 @@ if __name__ == "__main__":
       label = read_labels(label_path)
 
       for j in range(len(scan)):
-          scan[j][3] = label[j]
+          scan[j][4] = label[j]
 
       out_name = scan_name.split('.')[0]+'.txt'
       out_path = os.path.join(out_dir, out_name)
